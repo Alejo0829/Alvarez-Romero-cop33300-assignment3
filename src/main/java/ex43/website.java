@@ -5,23 +5,15 @@
 package ex43;
 
 /*
-Goals:
 Have a List of Strings (ArrayList<String>)
 Have a default output folder path (in this case, ex43/website/)
-Create a single scanner method that takes in any input as a String (it's the user's fault for being stupid)
+Create a single scanner method that takes in any input as a String
 and places it in the List.
--Extra goal (not required): Ask to verify the input by doing another input scan and compare it to the previous one
 have a method for each:
 generating a folder based on the site name
 generating folders within .website/websitename/ folder (if "Y" is input for JavaScript/CSS)
 generate an index.html file in the .website/websitename/ folder with site name in <title> and author name in <meta>
 for generator methods: output each time a folder is created
-Questions:
-Site name:
-Author:
-Do you want a JavaScript folder?
-Do you want a CSS folder?
-output each creation
  */
 
 
