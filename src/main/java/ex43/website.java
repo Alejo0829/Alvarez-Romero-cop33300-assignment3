@@ -46,8 +46,6 @@ public class website {
 
 
     private void getInputs(String[] questions) {
-        // this goes through the String array and asks each question and puts it into the ArrayList
-        // Note: no constraints for proper input lmao
         for (String question : questions) {
             System.out.print(question);
             inputs.add(sc.nextLine());
@@ -68,7 +66,6 @@ public class website {
     }
 
     private void generateIndex(String websiteName, String authorName) {
-        // creates the actual index file
 
         Path indexFile = Paths.get(outputPathString + "index.html");
         try {
