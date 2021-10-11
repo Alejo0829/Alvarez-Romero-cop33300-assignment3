@@ -4,11 +4,9 @@
  */
 
 /*
-goals:
 create a class that loads in the JSON parser
-figure out how to use the JSON parser
 have a Scanner ask for user input
-compare it to the JSON file values somehow
+compare it to the JSON file values
 either output the JSON values if there's a match, or print out error and repeat the Scanner question
  */
 
@@ -37,19 +35,16 @@ public class product {
 
     }
 
-    // turns the json file into an arraylist of maps
+
     private ArrayList<Map<String, String>> parsingGson() {
 
         Map<Object, ArrayList<Map<String, String>>> jsonObj = null;
 
         try {
-            // create Gson instance
             Gson gson = new Gson();
 
-            // create a reader
             Reader reader = Files.newBufferedReader(input);
 
-            // convert JSON file to map
             jsonObj = gson.fromJson(reader, Map.class);
 
             reader.close();
@@ -68,14 +63,14 @@ public class product {
 
     private void getUserInput(ArrayList<Map<String, String>> mapArray) {
 
-        // repeat until user input is valid
+
         do {
             String userInput = sc.nextLine();
-            // loops through each map
+
             for (Map<String, String> map : mapArray) {
-                // this is horrible but I'm too tired to fix it
+
                 if (map.containsValue(userInput)) {
-                    // goes to a hardcoded printout (it's bad)
+
                     printOut(map);
                     return;
                 }

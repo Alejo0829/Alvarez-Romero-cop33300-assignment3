@@ -23,7 +23,7 @@ class wordfftest {
 
         String string = "";
         try {
-            string = Files.readString(Path.of("/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/src/test/java/ex46test/testing46.txt"));
+            string = Files.readString(Path.of("/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/input/testing46.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }

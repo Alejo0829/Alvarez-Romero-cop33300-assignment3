@@ -20,7 +20,7 @@ class websitetest {
 
     private final Scanner sc = new Scanner(System.in);
     private final String outputPathString =
-            "/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/src/main/java/assignment3/ex43/website/";
+            "/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/input/website/";
     private List<String> inputs = new ArrayList<>();
 
     private final String[] questions = {

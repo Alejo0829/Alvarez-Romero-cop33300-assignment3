@@ -50,9 +50,9 @@ public class employees {
         List<String> tempArray;
         for (String string : array) {
             HashMap<String, String> tempMap = new HashMap<>();
-            tempArray = Arrays.asList(string.split(",")); // create a method that takes a string and splits it by ","
-            arrayToMap(tempArray, tempMap); // put array into maps
-            map.add(tempMap); //add Map to ArrayList
+            tempArray = Arrays.asList(string.split(","));
+            arrayToMap(tempArray, tempMap);
+            map.add(tempMap);
         }
     }
 

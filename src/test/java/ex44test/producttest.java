@@ -18,7 +18,7 @@ import java.util.Map;
 
 class producttest {
 
-    String path = "/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/src/test/java/assignment3/ex44/exercise44_input.json";
+    String path = "/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/input/exercise44_input.json";
     Gson gson = new Gson();
 
 

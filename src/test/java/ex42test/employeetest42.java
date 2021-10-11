@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 class employeetest42 {
 
     public String inputPathString =
-            "/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/src/main/java/assignment3/ex42/exercise42_input.txt";
+            "/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/input/exercise42_input.txt";
     public Path filePath = Paths.get(inputPathString);
     public Charset charset = StandardCharsets.UTF_8;
 

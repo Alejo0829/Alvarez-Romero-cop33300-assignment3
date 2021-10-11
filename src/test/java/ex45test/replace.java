@@ -33,7 +33,7 @@ class replace {
 
     @Test
     public void saveFile() {
-        Path saveFileTo = Path.of("/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/src/test/java/assignment3/ex45/output.txt");
+        Path saveFileTo = Path.of("/Users/rafal/IdeaProjects/Alvarez-Romero-cop3330-assignment3/output/output.txt");
 
         try {
             Files.createFile(saveFileTo);

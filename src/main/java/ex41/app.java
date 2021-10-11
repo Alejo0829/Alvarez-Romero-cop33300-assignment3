@@ -4,7 +4,6 @@
  */
 
 /*
-pseudocode:
 Create a class that can:
 	Reads/Loads a text file.
 	Puts the text file into a List of Strings

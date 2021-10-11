@@ -4,7 +4,6 @@
  */
 
 /*
-pseudocode:
 Read File
 Parse File into a List of Strings
 For each String, separate values into Hashmap based on "," and do next line when at \n
