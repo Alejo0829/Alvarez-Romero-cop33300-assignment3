@@ -1,0 +1,22 @@
+/*
+ * UCF COP3330 Fall 2021 Assignment 3 Solutions
+ * Copyright 2021 Rafael Alvarez-Romero
+ */
+@startuml
+
+class app
+class website {
+    String output_text_path
+    getInputs()
+    generateFiles()
+    outputFilesCreated()
+}
+
+abstract fileLocation
+abstract printOut
+
+app -> website
+website --> fileLocation
+website -> printOut
+
+@enduml

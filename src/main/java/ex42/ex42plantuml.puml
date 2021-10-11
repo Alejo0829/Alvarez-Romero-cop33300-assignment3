@@ -1,0 +1,30 @@
+/*
+ * UCF COP3330 Fall 2021 Assignment 3 Solutions
+ * Copyright 2021 Rafael Alvarez-Romero
+ */
+@startuml
+
+abstract printOut
+abstract outputText
+
+class app
+class employees {
+
+    Path: filePath
+    List: String: employeeList
+    List: Hashmap: employeeMap
+
+    setEmployeeList(array)
+    setEmployeeMap(array)
+    printMap(List: Hashmap)
+
+    +Employees()
+
+}
+
+app -|> Employees
+
+Employees --> printOut
+Employees --> outputText
+
+@enduml

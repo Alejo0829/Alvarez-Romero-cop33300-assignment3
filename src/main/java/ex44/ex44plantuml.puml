@@ -1,0 +1,22 @@
+/*
+ * UCF COP3330 Fall 2021 Assignment 3 Solutions
+ * Copyright 2021 Rafael Alvarez-Romero
+ */
+@startuml
+
+abstract output
+abstract txt
+
+class app
+
+class product {
+gsonToObject()
+objectToArrayList()
+getUserInput()
+}
+
+app -|> product
+product --> output
+txt --> product
+
+@enduml

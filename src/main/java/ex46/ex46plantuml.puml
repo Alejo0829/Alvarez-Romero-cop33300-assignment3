@@ -1,0 +1,37 @@
+/*
+ * UCF COP3330 Fall 2021 Assignment 3 Solutions
+ * Copyright 2021 Rafael Alvarez-Romero
+ */
+@startuml
+
+class txtFile
+abstract printOut
+
+class app
+
+class Words{
+String[] words
+Int[] wordsCount
+TreeMap(String, Integer)
+}
+
+class textfile {
+String txtPath
+getText()
+}
+
+class parsefile {
+    getTextFile)(
+    setWords()
+}
+
+app -|> Words
+txtFile -> textfile
+parsefile <|--> Words
+textfile <|--> parsefile
+
+Words -> app
+
+app --> printOut
+
+@enduml

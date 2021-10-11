@@ -1,0 +1,21 @@
+/*
+ * UCF COP3330 Fall 2021 Assignment 3 Solutions
+ * Copyright 2021 Rafael Alvarez-Romero
+ */
+@startuml
+
+class app
+class replace {
+String  txt_file_path
+createStringFromText()
+replaceInputString()
+saveFile()
+}
+abstract outputText
+abstract printOut
+
+app --> replace
+replace --> outputText
+replace--> printOut
+
+@enduml

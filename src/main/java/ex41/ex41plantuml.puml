@@ -1,0 +1,41 @@
+/*
+ * UCF COP3330 Fall 2021 Assignment 3 Solutions
+ * Copyright 2021 Rafael Alvarez-Romero
+ */
+
+@startuml
+
+abstract runApp
+class app
+abstract PrintOut
+abstract OutputText
+abstract InputText
+
+class employees {
+  .. Setter ..
+  + setStringArray()
+  + setOrder()
+  + setTextFile()
+  .. Getter ..
+  + getTextFile()
+  + getStringArray()
+  __ private data __
+ArrayList<String>
+
+}
+
+runApp -> main_app
+
+app <--|> employees
+
+InputText -> Employees
+
+
+employees -> OutputText
+
+OutputText -> PrintOut
+
+app -|> PrintOut
+
+
+@enduml
