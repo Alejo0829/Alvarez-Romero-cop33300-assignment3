@@ -92,7 +92,7 @@ public class website {
                 "Do you want a CSS folder? (Y/N) "
         };
         getInputs(questions);
-        generateFolder("Y", ""); // creates website folder if you don't already have one
+        generateFolder("Y", "");
         generateFolder("Y", inputs.get(0));
         generateIndex(inputs.get(0), inputs.get(1));
         generateFolder(inputs.get(2), "js");
